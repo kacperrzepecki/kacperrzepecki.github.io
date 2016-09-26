@@ -1,0 +1,226 @@
+body {
+background:#000;
+color:#fff;
+position:relative;
+font-family:'Open Sans', sans-serif;
+font-size:1em;
+overflow:hidden;
+}
+
+h3,h1 {
+font-weight:lighter;
+}
+
+div.imageContainer {
+float:right;
+position:relative;
+top:0;
+left:0;
+margin:5px;
+}
+
+div.imageContainer>img {
+position:absolute;
+top:0;
+left:0;
+max-width:40mm;
+max-height:40mm;
+}
+
+div.imageContainer>img:first-child {
+position:relative;
+}
+
+h1 {
+margin-top:70px;
+margin-bottom:0;
+}
+
+div.titlediv {
+top:0;
+padding-bottom:30px;
+position:fixed;
+background:#000;
+}
+
+div.titlediv>div.subtitle {
+top:75px;
+}
+
+div.titlediv,div.content {
+width:50%;
+margin:0 auto;
+}
+
+h2 {
+font-size:1.5em;
+font-weight:lighter;
+margin-top:0;
+}
+
+h2.JobTitle {
+font-size:1.5em;
+margin-top:0;
+margin-bottom:0;
+}
+
+h2.JobPlace {
+font-size:1.2em;
+margin-top:0;
+margin-bottom:5px;
+}
+
+#EducationSection h2.JobPlace{
+font-size:0.7em;
+}
+
+div.dateDesc {
+font-size:.7em;
+}
+
+#imgPictureTextImagine {
+position:absolute;
+font-size:1.3mm;
+top:12mm;
+height:50px;
+width:50px;
+left:13mm;
+z-index:1869;
+transform:rotate(-17deg);
+white-space:pre;
+}
+
+#contentWrapper
+{
+margin-top:0px;
+}
+
+section {
+position:absolute;
+display:none
+left:0;
+right:0;
+margin-left:auto;
+margin-right:auto;
+margin-top:190px;
+}
+
+div.content {
+top:100px;
+}
+
+div.content,div.titlediv,#HomePage>div,section  {
+width:600px;
+}
+
+ul ul
+{
+padding-left:20px
+}
+ul 
+{
+padding-left:25px
+}
+
+nav {
+width:160px;
+z-index:999999;
+position:relative;
+top:195px;
+left:-200px;
+margin:0;
+padding:0;
+}
+
+#HomePage>div {
+top:0;
+position:relative;
+height:300px;
+}
+
+nav>a {
+display:block;
+width:160px;
+height:20px;
+padding-top:8px;
+}
+
+nav>a>img {
+vertical-align:middle;
+width:10px;
+height:10px;
+}
+
+nav>a>span {
+padding-left:10px;
+font-size:.75em;
+opacity:0;
+-webkit-transition:1s;
+-moz-transition:1s;
+-o-transition:1s;
+transition:1s;
+}
+nav>a:hover>span {
+opacity:1;
+-webkit-transition:1s;
+-moz-transition:1s;
+-o-transition:1s;
+transition:1s;
+}
+
+.phoneOverlay {
+width:64px;
+height:64;
+overflow:hidden;
+-webkit-transition:1s;
+-moz-transition:1s;
+-o-transition:1s;
+transition:1s;
+}
+
+.phoneOverlay:hover,.phoneOverlay>div {
+width:600px;
+-webkit-transition:1s;
+-moz-transition:1s;
+-o-transition:1s;
+transition:1s;
+}
+
+ul {
+list-style-type: disc;
+}
+.content * {
+z-index:-100;
+}
+
+a {
+text-decoration:none;
+color:#fff;
+width:20px;
+height:20px;
+overflow:hidden;
+}
+
+#ContactSection img {
+height:64px;
+}
+
+a:hover {
+cursor:pointer;
+color:#fff;
+}
+
+.typed-cursor {
+display:none;
+}
+
+#PrintContactSection, #ExperienceHeader
+{
+display:none;
+}
+#log
+{
+position: absolute;
+
+left:0px; top:0px;
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kacper's place</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no">
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/main_print.css"/>
+        <link rel="stylesheet" href="css/main_mobile.css"/>
+        <meta name="Googlebot-Image" content="none"/>
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/typed.js"></script>
+        <script type="text/javascript" src="js/parallax.js"></script>
+        <script type="text/javascript" src="js/textualizer.js"></script>
+        <script type="text/javascript" src="js/jsBackend.js"></script>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+              
+              $(function() {
+              
+                var zIndexNumber = 1000;
+                $('*').each(function() {
+                    $(this).css('zIndex', zIndexNumber);
+                    zIndexNumber -= 1;
+                });
+                
+                prepareUIAnimations();
+                prepareParallax();
+            navigateToHash(location.hash);
+              });
+              
+            });
+            $( window ).on( "hashchange", function() { navigateToHash(location.hash); } );
+            
+            $( window ).keydown(function( event ) {
+              switch ( event.which ) {
+                case 37:
+                case 38:
+                case 33:
+                  navigateByIndexShift(-1);
+                  break;
+                case 39:
+                case 40:
+                case 34:
+                  navigateByIndexShift(1);
+                  break;
+              }
+            });
+            
+         
+        </script>
+        
+         <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-55214928-1', 'auto');
+          ga('require', 'displayfeatures');
+          ga('send', 'pageview');
+
+        </script>
+    </head>
+    <body>
+        <div class="content">
+            <nav>
+                <a class="mainMenu"           href="#_HomePage"         ><img src="img/btn1.png"/><span>Home                 </span></a>
+                <a class="mainMenu"           href="#_EducationSection" ><img src="img/btn1.png"/><span>Education            </span></a>
+                <a class="mainMenuExperience" href="#_MsSection3"       ><img src="img/btn1.png"/><span>Microsoft SDE II     </span></a>
+                <a class="mainMenuExperience" href="#_MsSection2"       ><img src="img/btn1.png"/><span>Microsoft SDE        </span></a>
+                <a class="mainMenuExperience" href="#_MsSection1"       ><img src="img/btn1.png"/><span>Microsoft SDET       </span></a>
+                <a class="mainMenuExperience" href="#_GsocSection"      ><img src="img/btn1.png"/><span>Google Summer of Code</span></a>
+                <a class="mainMenuExperience" href="#_ImagineSection"   ><img src="img/btn1.png"/><span>Imagine Cup          </span></a>
+                <a class="mainMenuExperience" href="#_ProteusSection"   ><img src="img/btn1.png"/><span>Proteus Project      </span></a>
+                <a class="mainMenuExperience" href="#_SoaSection"       ><img src="img/btn1.png"/><span>ITSOA Project        </span></a>
+                <a class="mainMenu"           href="#_ContactSection"   ><img src="img/btn1.png"/><span>Contact              </span></a>
+            </nav>
+            <div class="titlediv">
+                <h1><a href="#">Kacper Rzepecki</a></h1>
+                <div>born engineer</div>
+            </div>
+            <div id="log"></div>
+            <div id="contentWrapper">
+            
+            <section id="PrintContactSection" >
+                  <div>
+                    <img src="img/phonePrint.png"/>
+                  </div>
+                  <div>
+                    <img src="img/mailPrint.png"/>
+                  </div>
+            </section>
+            <section id="HomePage">
+                <div id="HomePage1">
+                <p>Highly skilled, quality oriented engineer.</p>
+                <p>Experienced in both, software development and testing.</p>
+                <p>Experience in cloud development world largest ERP system - Microsoft Dynamics AX.</p>
+                <p>Experience in project and process management.</p>
+                <p>Strong educational and theoretical background.</p>
+                <p>Deep domain knowledge in areas of discrete and process manufacturing, inventory management and costing.</p></div>
+            </section>
+            <section id="EducationSection"  >
+                <h2>Education</h2>
+                <div class="imageContainer">
+                    <img  src="img/educated3.png"/>
+                    <img  id="educationHat" src="img/educatedHat.png"/>
+                </div>
+                <div>
+                    <h2 class="JobTitle">Engineer's Degree</h2>
+                    <h2 class="JobPlace">Poznan University of Technology<br/>Faculty of Computing<br/>Computer Science</h2>
+                    <div class="dateDesc">2007 - 2011</div>
+                    <ul>
+                        <li>
+                            Rector's Scholarship for extraordinary results
+                        </li>
+                        <li>
+                            Member of Computing Science Club council board
+                        </li>
+                        <li>
+                            B.Sc. title with honors (A+ grade)
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="JobTitle">Master's Degree</h2>
+                    <h2 class="JobPlace">Poznan University of Technology<br/>Faculty of Computing<br/>Computer Science</h2>
+                    <div class="dateDesc">2011 - 2012</div>
+                    <ul>
+                        <li>
+                            Field of study: Intelligent Decision Support Systems
+                        </li>
+                        <li>
+                            Rector's Scholarship for extraordinary results
+                        </li>
+                        <li>
+                            M.Sc. title with honors (A+ grade)
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="JobTitle">Certificates</h2>
+                    <ul>
+                        <li>MCTS: .NET Framework 4, Data Access</li>
+                        <li>MCTS: .NET Framework 4, Service Communication Applications</li>
+                        <li>MCTS: .NET Framework 4, Windows Applications</li>
+                        <li>MCPD: Windows Developer 4</li>
+                    </ul>
+                </div>
+            </section>
+            <h2 id="ExperienceHeader">Experience</h2>
+            <section   id="MsSection3">
+                <h2 class="JobTitle">Software Engineer II</h2>
+                <h2 class="JobPlace">Microsoft</h2>
+                <div class="dateDesc">2014 - </div>
+                <div class="imageContainer">
+                    <img src="img/thumbup.png"/>
+                    <img src="img/thumbupEye.png" id="thumbupEye"/>
+                </div>
+                <ul>
+                    <li>
+                        Responsible for:
+                        <ul>
+                            <li>Design and development of complex features in area of SCM and Costing in Dynamics AX.</li>
+                            <li>Migration of Dynamics AX to the Azure platform.</li>
+                            <li>Close collaboration with customer support organization and Microsoft Partners on fixing customer's issues.</li>
+                            <li>Facilitating an Agile process in the organization as a SCRUM master.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Key accomplishments:
+                        <ul>
+                            <li>Design and implementation of the Recycled Byproduct feature.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section  id="MsSection2" >
+                <h2 class="JobTitle">Software Engineer</h2>
+                <h2 class="JobPlace">Microsoft</h2>
+                <div class="dateDesc">2013 - 2014</div>
+                <div class="imageContainer">
+                    <img src="img/learner2.png"/>
+                    <img src="img/learnerEffect.png" id="learnerEffect"/>
+                </div>
+                <ul>
+                    <li>
+                        Responsible for:
+                        <ul>
+                            <li>Design and development of new features in Dynamics AX.</li>
+                            <li>Improving quality of existing features.</li>
+                            <li>Facilitating an Agile process in the organization as a SCRUM master.</li>
+                            <li>Providing end-to-end scenario automation.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Key accomplishments:
+                        <ul>
+                            <li>Design and development of the Cost Controller Role Center.</li>
+                            <li>Improvements in the area of Process Industries costing.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section  id="MsSection1" >
+                <h2 class="JobTitle"> Software Development Engineer in Test</h2>
+                <h2 class="JobPlace">Microsoft</h2>
+                <div class="dateDesc">2011 - 2013</div>
+                <div class="imageContainer">
+                    <img src="img/sdet.png"/>
+                    <img src="img/sdetGlow.png" id="sdetGlow"/>
+                    <img src="img/sdetHit.png" id="sdetHit"/>
+                </div>
+                <ul>
+                    <li>
+                        Responsible for:
+                        <ul>
+                            <li>Design and development of test automation frameworks.</li>
+                            <li>Design and development of test automation for assigned features.</li>
+                            <li>Collaboration with Microsoft customers and partners to gather and validate requirements.</li>
+                            <li>Ensuring the quality of new features leveraging deep domain knowledge and understanding of customer scenarios.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Key accomplishments:
+                        <ul>
+                            <li>Significant performance improvements of existing test automation.</li>
+                            <li>Validation of quality of the Cost Accounting module.</li>
+                            <li>Validation of quality during onboarding of the Process Industries solution.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="GsocSection"  >
+                <h2 class="JobTitle">C++ developer</h2>
+                <h2 class="JobPlace">Google Summer of Code</h2>
+                <div class="dateDesc">2010</div>
+                <div class="imageContainer">
+                    <img src="img/gsoc.png"/>
+                    <img src="img/gsocHand.png" id="gsocHand"/>
+                </div>
+                <ul>
+                    <li>
+                        C++ developer for CGAL (Computational Geometry Algorithms Library)
+                    </li>
+                    <li>
+                        Responsible for simplifying the Triangulation 3 API
+                    </li>
+                    <li>
+                        Extensive use of
+                        <ul>
+                            <li>C++ templates</li>
+                            <li>Boost libraries</li>
+                            <li>Advanced language structures</li>
+                            <li>Algorithmic background</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section id="ImagineSection" >
+                <h2 class="JobTitle">C# developer / team leader</h2>
+                <h2 class="JobPlace">Imagine Cup 2010</h2>
+                <div class="dateDesc">2009 - 2011</div>
+                <div class="imageContainer">
+                    <img src="img/software.png" id="ImagineImg"/>
+                    <div id="imgPictureTextImagine"></div>
+                </div>
+                <ul>
+                    <li>
+                        Leader of the SinciPUT team, project BioAvatar.
+                    </li>
+                    <li>
+                        Responsible for:
+                        <ul>
+                            <li>Design and development of an XML system for description of a non-linear user interaction system</li>
+                            <li>Development of speech synthesis and recognition system in .NET</li>
+                        </ul>
+                    </li>
+                    <li>
+                       Top 10 in Poland.
+                    </li>
+                    <li>
+                        The project was continued till Feb 2011 as a B.Sc. dissertation.
+                    </li>
+                </ul>
+            </section>
+            <section id="ProteusSection"  >
+                <h2 class="JobTitle">C# / Python developer</h2>
+                <h2 class="JobPlace">Mobile Systems Research Laboratories<br/>Poznan University of Technology</h2>
+                <div class="dateDesc">2009</div>
+                <div class="imageContainer">
+                    <img src="img/learner.png" id="ProteusImg"/>
+                    <img src="img/learnerShot.png" id="ProteusImgShot"/>
+                </div>
+                <ul>
+                    <li>
+                        C# and Python developer as part of the PROTEUS project (Integrated Mobile System Supporting Counter-terrorism and Anti-crisis operations)
+                    </li>
+                    <li>
+                        Responsible for:
+                        <ul>
+                            <li>GIS module development</li>
+                            <li>Remote LDAP management system</li>
+                            <li>Mailman list management plugin for TRAC CMS</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>            
+            <section id="SoaSection"  >
+                <h2 class="JobTitle">Student researcher</h2>
+                <h2 class="JobPlace">Institute of Computing Science, Poznan University of Technology</h2>
+                <div class="dateDesc">2009</div>
+                <div class="imageContainer">
+                    <img src="img/scienceBase.png"/>
+                    <img src="img/scienceEyes.png" id="scienceEyes"/>
+                    <img src="img/scienceGlow.png" id="scienceGlow"/>
+                </div>
+                <ul>
+                    <li>
+                        Analysis of existing failure recovery mechanism in web servers and messaging systems.
+                    </li>
+                    <li>
+                        Analysis on how REST service architecture principle could be leveraged to achieve failure resistance.
+                    </li>
+                    <li>
+                        Development of failure resistant REST service.
+                    </li>
+                    <li>
+                        Technologies: SHOAL, JBOSS, JBOSS Messaging, JGroups.
+                    </li>
+                </ul>
+            </section>
+            <section id="ContactSection" >
+                <h2>Contact</h2>
+                <a href="https://www.linkedin.com/in/kacperrzepecki" target="_blank">
+                <img src="img/linkedInLogo.png"/>
+                </a>
+                <br/>
+                <div class="phoneOverlay">
+                  <div>
+                    <img src="img/phoneLogo.png"/>
+                    <img src="img/phone.png"/>
+                  </div>
+                </div>
+                <div class="phoneOverlay">
+                  <div>
+                    <img src="img/skypeLogo.png"/>
+                    <img src="img/skype.png"/>
+                  </div>
+                </div>
+                
+                <div class="phoneOverlay">
+                  <div>
+                    <img src="img/mailLogo.png"/>
+                    <img src="img/mail.png"/>
+                  </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </body>
+</html>
