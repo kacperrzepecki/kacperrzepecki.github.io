@@ -11,7 +11,7 @@ div.titlediv
 {
 background:transparent;
 }
-div.imageContainer,div.imageContainer>img,nav
+div.imageContainer,div.imageContainer>img,nav,div.bigImageContainer,div.bigImageContainer>img
 {
 display:none;
 }

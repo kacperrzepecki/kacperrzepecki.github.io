@@ -205,6 +205,26 @@ function prepareUIAnimations()
     });
     
     
+	$(function() {
+		function emAnimation() {
+			$('#em_2').css({'opacity' : '0'});
+			$('#em_3').css({'opacity' : '0'});
+			$('#em_4').css({'opacity' : '0'});
+			$('#em_5').css({'opacity' : '0'});
+			$('#em_6').css({'opacity' : '0'});
+			$('#em_7').css({'opacity' : '0'});
+			$('#em_8').css({'opacity' : '0'});
+			$('#em_2').delay(0000+1000).animate({'opacity' : '1'}, 500).delay(9000+5000).animate({'opacity' : '0'}, 50);
+			$('#em_3').delay(1500+1000).animate({'opacity' : '1'}, 500).delay(7500+5000).animate({'opacity' : '0'}, 50);
+			$('#em_4').delay(3000+1000).animate({'opacity' : '1'}, 500).delay(6000+5000).animate({'opacity' : '0'}, 50);
+			$('#em_5').delay(4500+1000).animate({'opacity' : '1'}, 500).delay(4500+5000).animate({'opacity' : '0'}, 50);
+			$('#em_6').delay(6000+1000).animate({'opacity' : '1'}, 500).delay(3000+5000).animate({'opacity' : '0'}, 50);
+			$('#em_7').delay(7500+1000).animate({'opacity' : '1'}, 500).delay(1500+5000).animate({'opacity' : '0'}, 50);
+			$('#em_8').delay(9000+1000).animate({'opacity' : '1'}, 500).delay(0000+5000).animate({'opacity' : '0'}, 50, emAnimation);
+		}
+	emAnimation();
+	});
+	
     $(function () {
       function gsocHand() {
         $('#gsocHand')
@@ -216,11 +236,10 @@ function prepareUIAnimations()
     gsocHand();
     });
     
-    
     $(function () {
       function sdetGlow() {
         $('#sdetGlow')
-               .delay(2600)
+               .delay(1200)
                .animate({'opacity'  :'1'}, 100)
                .delay(100)
                .animate({'opacity'  :'0'}, 100)
@@ -230,7 +249,7 @@ function prepareUIAnimations()
                .animate({'opacity'  :'0'}, 100)
                .delay(100)
                .animate({'opacity'  :'1'}, 100)
-               .delay(5000)
+               .delay(2000)
                .animate({'opacity'  :'0'}, 100, sdetGlow)
                ;
     }
@@ -241,11 +260,11 @@ function prepareUIAnimations()
     $(function () {
       function sdetHit() {
         $('#sdetHit')
-               .delay(2000)
+               .delay(1000)
                .animate({'opacity'  :'1'}, 100)
-               .delay(1500)
+               .delay(700)
                .animate({'opacity'  :'0'}, 100)
-               .delay(4800)
+               .delay(1800)
                .animate({'opacity'  :'0'}, 100, sdetHit)
                ;
     }

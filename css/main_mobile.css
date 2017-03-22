@@ -1,4 +1,4 @@
-@media screen and (max-width: 8.5in){ 
+@media screen and (max-width: 1000px){ 
 body
 {
 overflow:scroll;
@@ -25,7 +25,7 @@ top:0px!important;
 display:none!important;
 }
 
-div.imageContainer,div.imageContainer>img
+div.imageContainer,div.imageContainer>img,div.bigImageContainer,div.bigImageContainer>img
 {
 display:none;
 }
